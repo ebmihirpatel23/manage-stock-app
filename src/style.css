@@ -1,0 +1,30 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
+
+:root {
+    /*--tw-ring-color: hsl(var(264 5% 64.9%));*/
+}
+
+body {
+    @apply bg-gray-100;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #09090b;
+    border-radius: 5px;
+    cursor: n-resize;
+}

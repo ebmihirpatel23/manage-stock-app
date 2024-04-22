@@ -3,7 +3,7 @@ import ManageStock from "../components/managestock/ManageStock.vue";
 </script>
 
 <template>
-  <div class="p-6 capitalize">
+  <div class="pb-6 capitalize">
     <ManageStock></ManageStock>
   </div>
 </template>
