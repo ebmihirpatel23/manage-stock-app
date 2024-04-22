@@ -1,0 +1,31 @@
+{
+    "name": "IsoEvolve",
+    "short_name": "IsoEvolve",
+    "description": "Adaptive Practice Management Software",
+    "icons": [
+        {
+            "src": "/images/logos/logo.isoevolve.icon.white.72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logos/logo.isoevolve.icon.white.96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logos/logo.isoevolve.icon.white.128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/logos/logo.isoevolve.icon.white.512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#ffffff",
+    "theme_color": "#1faba0",
+    "display": "standalone"
+}
