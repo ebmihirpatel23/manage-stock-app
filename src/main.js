@@ -4,16 +4,16 @@ import router from "./router";
 
 import "./style.css";
 import "primeicons/primeicons.css";
-// import MyPreset from "./mypreset/index";
+import MyPreset from "./mypreset/index";
 import PrimeVue from "primevue/config";
 import PrimeOne from "primevue/themes/primeone";
-import { Aura } from "primevue/themes/primeone/presets/index.cjs.js";
 
-import "primeflex/primeflex.css";
+// import "primeflex/primeflex.css";
 // import "primevue/resources/primevue.min.css";
-// import "primeicons/primeicons.css";
+// import "primevue/resources/themes/lara-light-teal/theme.css";
+
 // import "../node_modules/prismjs/themes/prism-coy.css";
-// import "./assets/styles/demo/flag.css";
+import "./assets/styles/demo/flag.css";
 
 import Accordion from "primevue/accordion";
 import AccordionTab from "primevue/accordiontab";
@@ -77,11 +77,11 @@ import piniaPluginPersistedState from "pinia-plugin-persistedstate";
 
 const app = createApp(App);
 
-// app.use(PrimeVue, { ripple: true });
 app.use(PrimeVue, {
+    ripple: true,
     theme: {
         base: PrimeOne,
-        preset: Aura,
+        preset: MyPreset,
         options: {
             prefix: "p",
             darkModeSelector: "light",
@@ -104,7 +104,7 @@ pinia.use(piniaPluginPersistedState);
 app.use(pinia);
 
 app.config.globalProperties.$appState = reactive({
-    theme: "lara-light-teal",
+    theme: "aura-light-teal",
     dark: false,
 });
 

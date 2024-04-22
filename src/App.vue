@@ -1,19 +1,16 @@
 <template>
     <div class="layout-content">
-        <IsoEvolveHeader v-if="false"/>
+        <IsoEvolveHeader/>
         <router-view></router-view>
-        <IsoEvolveFooter/>
     </div>
 </template>
 
 <script>
 import IsoEvolveHeader from "@/components/Header.vue";
-import IsoEvolveFooter from "@/components/IsoEvolveFooter";
 
 export default {
     components: {
         IsoEvolveHeader,
-        IsoEvolveFooter,
     },
     data() {
         return {
@@ -26,6 +23,6 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import "./assets/styles/app/layout.scss";
-</style>
+<!-- <style lang="scss">
+@import './assets/styles/app/layout.scss';
+</style> -->
