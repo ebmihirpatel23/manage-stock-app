@@ -18,6 +18,9 @@ import Badge from 'primevue/badge';
 import Button from 'primevue/button';
 import Calendar from 'primevue/calendar';
 import Carousel from 'primevue/carousel';
+import IconField from "primevue/iconfield";
+import InputIcon from "primevue/inputicon";
+import Card from 'primevue/card';
 import Chart from 'primevue/chart';
 import Checkbox from 'primevue/checkbox';
 import Chip from 'primevue/chip';
@@ -65,6 +68,7 @@ import BlockViewer from './components/blockviewer/BlockViewer.vue';
 import { createPinia } from 'pinia';
 import piniaPluginPersistedState from "pinia-plugin-persistedstate";
 
+
 const app = createApp(App);
 app.use(PrimeVue, { ripple: true });
 app.use(ToastService);
@@ -76,6 +80,9 @@ app.use(pinia);
 
 app.config.globalProperties.$appState = reactive({ theme: 'lara-light-teal', dark: false });
 
+app.component('IconField', IconField);
+app.component('InputIcon', InputIcon);
+app.component('Card', Card);
 app.component('Accordion', Accordion);
 app.component('AccordionTab', AccordionTab);
 app.component('AutoComplete', AutoComplete);
